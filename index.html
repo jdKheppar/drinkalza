@@ -4,13 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>drinkalza</title>
+    <!-- For Slick Styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- jquery library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
+      <nav class="mobile-nav">
+        <a href="#find" class="button w-button">find alza</a>
+        <div class="hamburger-link" id="hamburger-link">
+          <div class="hamburger-line" style="display: block"></div>
+          <div class="hamburger-line" style="display: block"></div>
+          <img
+            src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6344361a552e2a1ab3a3443c_x.png"
+            alt="Cross Button"
+            class="x-image"
+          />
+          <div
+            data-w-id="8a5884c5-1c3e-dffb-059a-afc61b6ba941"
+            class="x-hold"
+            style="display: none"
+          >
+            <div class="line-2"></div>
+            <div class="line-1"></div>
+          </div>
+        </div>
+        <div id="mobile-link-div" class="mobile-link-div">
+          <div class="nav-link-div_mobile">
+            <a href="#flavor" class="nav-link">Flavors</a
+            ><a href="#about" class="nav-link">About</a
+            ><a href="#faq" class="nav-link">FAQs</a
+            ><a href="#find" class="nav-link is-last">Find Alza</a>
+          </div>
+        </div>
+      </nav>
       <nav class="navbar">
         <nav class="nav-desktop">
-          <div class="nav-menu">
+          <div class="nav-desktop-menu">
             <a href="#flavor" class="nav-link">FLAVORS</a>
             <div class="circle"></div>
             <a href="#about" class="nav-link">ABOUT</a>
@@ -18,7 +62,7 @@
             <a href="#Home" class="brand w-nav-brand w--current"
               ><img
                 src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b6394a8427b0c5863bca5_6478e3a55f5d9ed2bb5eb74e_n-logo-can.webp"
-                loading="lazy"
+                class="mainNavbarLogo"
                 alt="logo image"
             /></a>
             <div class="circle"></div>
@@ -29,8 +73,2146 @@
         </nav>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section id="Home" class="section-hero">
+        <div class="Home-page-padding is-celebrate-mobile">
+          <div class="hero-componet">
+            <div class="left-splash">
+              <div class="tequila-soda">
+                <div class="splash-div top" style="width: 55.0469px">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e7295f0f2ca02ef87c9d8_splash-double-up.svg"
+                    alt=""
+                    class="splash-svg"
+                  />
+                </div>
+                <div class="text-appear-div">
+                  <h2 class="heading-5">TEQUILA<br />SODA</h2>
+                </div>
+                <div class="splash-div bottom" style="width: 55.0469px">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72955e0d748124a64410_splash-double-down.svg"
+                    alt=""
+                    class="splash-svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="hero-cta">
+              <div class="hero-item">
+                <div class="hero-item-img">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b632c01de3122b1c5c7a5_6477bbf5cdcafe96837020b6_new%20cans%20fan%20hero.webp"
+                    class="image"
+                    srcset="
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b632c01de3122b1c5c7a5_6477bbf5cdcafe96837020b6_new%20cans%20fan%20hero-p-500.webp   500w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b632c01de3122b1c5c7a5_6477bbf5cdcafe96837020b6_new%20cans%20fan%20hero-p-800.webp   800w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b632c01de3122b1c5c7a5_6477bbf5cdcafe96837020b6_new%20cans%20fan%20hero-p-1080.webp 1080w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b632c01de3122b1c5c7a5_6477bbf5cdcafe96837020b6_new%20cans%20fan%20hero-p-1600.webp 1600w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b632c01de3122b1c5c7a5_6477bbf5cdcafe96837020b6_new%20cans%20fan%20hero.webp        1840w
+                    "
+                    alt="hero image"
+                  />
+                </div>
+              </div>
+              <div class="hero-cta">
+                <div class="margin-bottom margin-medium">
+                  <h1 class="heading-4">Celebrate the good stuff.</h1>
+                </div>
+              </div>
+            </div>
+            <div class="right-splash">
+              <div class="tequila-soda">
+                <div class="splash-div top" style="width: 55.0469px">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e7295f0f2ca02ef87c9d8_splash-double-up.svg"
+                    alt=""
+                    class="splash-svg"
+                  />
+                </div>
+                <div class="text-appear-div">
+                  <h2 class="no-break-header">ALL NATURAL <br /></h2>
+                </div>
+                <div class="text-appear-div">
+                  <h2 class="heading-6">INGREDIENTS</h2>
+                </div>
+                <div class="splash-div bottom" style="width: 55.0469px">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72955e0d748124a64410_splash-double-down.svg"
+                    alt=""
+                    class="splash-svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-componet-mobile">
+            <div class="mobile-header">
+              <h1 class="heading-3">Celebrate the<br />good stuff</h1>
+            </div>
+            <div class="image-1-1--hero">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834a8003a70b374bc7f58a_64790490222940c960d4787a_n-mobile-hero-p-800.webp"
+                sizes="100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834a8003a70b374bc7f58a_64790490222940c960d4787a_n-mobile-hero-p-800-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834a8003a70b374bc7f58a_64790490222940c960d4787a_n-mobile-hero-p-800.webp       800w
+                "
+                alt="Mobile Banner image alza"
+                class="image _2"
+              />
+            </div>
+            <div class="hero-cta-mobile">
+              <div class="super-splash-upper">
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e7295f0f2ca02ef87c9d8_splash-double-up.svg"
+                  alt="Splash Top"
+                  class="image-6"
+                />
+              </div>
+              <div class="hero-text-holder">
+                <p class="text-size-large">
+                  TEQUILA SODA WITH <br />ALL NATURAL INGREDIENTS
+                </p>
+              </div>
+              <div class="splash-lower">
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631262ac0934f7895945b26c_super-splash.svg"
+                  alt="Splash Top"
+                  class="image-7"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="flavor" class="section-flavor">
+        <div
+          data-delay="2000"
+          data-animation="slide"
+          class="slider-flavor w-slider"
+          data-autoplay="true"
+          data-easing="ease"
+          data-hide-arrows="false"
+          data-disable-swipe="false"
+          data-autoplay-limit="0"
+          data-nav-spacing="3"
+          data-duration="200"
+          data-infinite="true"
+          role="region"
+          aria-label="carousel"
+        >
+          <div class="w-slider-mask" id="w-slider-mask-0">
+            <div
+              class="w-slide"
+              aria-label="1 of 4"
+              role="group"
+              style="
+                transform: translateX(-3216px);
+                opacity: 1;
+                transition: transform 200ms ease 0s;
+              "
+            >
+              <div class="w-layout-grid mobile-grid">
+                <div
+                  id="w-node-d4c088a2-d4a9-a3a3-f76a-b3984286d165-6f2c62d2"
+                  class="image-1-1-mobile"
+                >
+                  <div class="orange-images-mobile _1">
+                    <h2 class="swipe-text top">DEEP<br />CITRUS</h2>
+                    <h3 class="swipe-text bottom">Tangy<br />Burst</h3>
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834fb4423947c0d02fe6f4_63192ba734235e6fc669e56f_fruit-blood-orange-p-500.webp"
+                      alt="Orange"
+                      class="image is-orange"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange.webp"
+                      sizes="100vw"
+                      srcset="
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange-p-500.webp 500w,
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange.webp       735w
+                      "
+                      alt="Blood Orange"
+                      class="image _2"
+                    />
+                    <div class="splash-swipe-div">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                    <div class="splash-swipe-div bottom">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="w-node-a83eb1bd-8bd0-590e-3e0d-9ac91deb60af-6f2c62d2"
+                  class="flavor-div-mobile"
+                >
+                  <h2 class="flavor-header orange">Blood Orange</h2>
+                  <p class="text-size-large">
+                    Bursting with sweet <br />citrus tang
+                  </p>
+                  <div class="splashy-flavor">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631251eb5fc4cc4aa11e8967_splash-double-large-orange.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-slide"
+              aria-label="2 of 4"
+              role="group"
+              style="
+                transform: translateX(-3216px);
+                opacity: 1;
+                transition: transform 200ms ease 0s;
+              "
+            >
+              <div class="w-layout-grid mobile-grid">
+                <div
+                  id="w-node-_7266ad45-29c9-6b83-9ed4-21096d0eb8ec-6f2c62d2"
+                  class="image-1-1-mobile"
+                >
+                  <div class="prickly-image-mobile">
+                    <h3 class="swipe-text top">CACTUS<br />FRUIT</h3>
+                    <h3 class="swipe-text bottom">MELLOW<br />TART</h3>
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800.webp"
+                      sizes="100vw"
+                      srcset="
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800-p-500.webp 500w,
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800.webp       800w
+                      "
+                      alt="Pump"
+                      class="image prickly"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear.webp"
+                      sizes="100vw"
+                      srcset="
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear-p-500.webp 500w,
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear.webp       735w
+                      "
+                      alt="Pricky pear"
+                      class="image _2"
+                    />
+                    <div class="splash-swipe-div">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                    <div class="splash-swipe-div bottom">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="w-node-_7266ad45-29c9-6b83-9ed4-21096d0eb8ee-6f2c62d2"
+                  class="flavor-div-mobile"
+                >
+                  <h2 class="flavor-header purple">prickly pear</h2>
+                  <p class="text-size-large">
+                    Unexpectedly delicious <br />and smooth
+                  </p>
+                  <div class="splashy-flavor">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc81e7f0735770bcc6197_splash-double-large.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-slide"
+              aria-label="3 of 4"
+              role="group"
+              style="
+                transform: translateX(-3216px);
+                opacity: 1;
+                transition: transform 200ms ease 0s;
+              "
+            >
+              <div class="w-layout-grid mobile-grid">
+                <div
+                  id="w-node-_75544583-6d34-d9cf-0c4f-86d1a30299c4-6f2c62d2"
+                  class="image-1-1-mobile"
+                >
+                  <div class="lime-images is-mobile">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835350896cd728bfdcb4d7_63193145bf52b21696226523_lime-p-500.webp"
+                      alt="Limon"
+                      class="lime"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3.webp"
+                      sizes="100vw"
+                      srcset="
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3-p-500.webp 500w,
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3.webp       735w
+                      "
+                      alt="Lime Can"
+                      class="lime-can"
+                    />
+                    <div class="splash-swipe-div">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                    <h3 class="swipe-text bottom is-prickly">
+                      ZESTY<br />KICK
+                    </h3>
+                    <h3 class="swipe-text top is-prickly">CITRUS<br />TWIST</h3>
+                    <div class="splash-swipe-div bottom">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="w-node-_75544583-6d34-d9cf-0c4f-86d1a30299c6-6f2c62d2"
+                  class="flavor-div-mobile"
+                >
+                  <h2 class="flavor-header green">LIME LEMON</h2>
+                  <p class="text-size-large">
+                    Refreshingly crisp with <br />a zesty twist
+                  </p>
+                  <div class="splashy-flavor">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc88ecf6ff3d348443c50_splash-double-large-lime.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-slide"
+              aria-label="4 of 4"
+              role="group"
+              style="
+                transform: translateX(-3216px);
+                opacity: 1;
+                transition: transform 200ms ease 0s;
+              "
+            >
+              <div class="w-layout-grid mobile-grid">
+                <div
+                  id="w-node-c851625c-34a2-1169-cb0e-712177a2aacb-6f2c62d2"
+                  class="image-1-1-mobile"
+                >
+                  <div class="berry-images-mobile">
+                    <h3 class="swipe-text top is-prickly">JUICY<br />BLEND</h3>
+                    <h3 class="swipe-text bottom is-prickly">
+                      RIPE<br />PUNCH
+                    </h3>
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800.webp"
+                      sizes="100vw"
+                      srcset="
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800-p-500.webp 500w,
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800.webp       800w
+                      "
+                      alt="Barry"
+                      class="image is-berry"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4.webp"
+                      sizes="100vw"
+                      srcset="
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4-p-500.webp 500w,
+                        https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4.webp       735w
+                      "
+                      alt="Fresh Berry"
+                      class="image _2"
+                    />
+                    <div class="splash-swipe-div">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                    <div class="splash-swipe-div bottom">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                        alt="Left Splash"
+                        class="splashy is-slider-top"
+                      /><img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                        alt="Right Svg"
+                        class="splashy is-slider-top"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="w-node-c851625c-34a2-1169-cb0e-712177a2aacd-6f2c62d2"
+                  class="flavor-div-mobile"
+                >
+                  <h2 class="flavor-header pink">FRESH BERRY</h2>
+                  <p class="text-size-large">
+                    Mouthwatering punch <br />of berries and citrus
+                  </p>
+                  <div class="splashy-flavor">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631252560d093920add190dc_splash-double-large-berry.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-live="off"
+              aria-atomic="true"
+              class="w-slider-aria-label"
+              data-wf-ignore=""
+            >
+              Slide 4 of 4.
+            </div>
+          </div>
+          <div
+            class="left-arrow w-slider-arrow-left"
+            role="button"
+            tabindex="0"
+            aria-controls="w-slider-mask-0"
+            aria-label="previous slide"
+          >
+            <img
+              src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6313b0b8b85cef9a95f4b4c8_arrow.svg"
+              alt="Left Arrow"
+              class="arrow"
+            />
+          </div>
+          <div
+            class="right-arrow w-slider-arrow-right"
+            role="button"
+            tabindex="0"
+            aria-controls="w-slider-mask-0"
+            aria-label="next slide"
+          >
+            <img
+              src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6313b0b8b85cef9a95f4b4c8_arrow.svg"
+              alt="Left Arrow"
+              class="arrow right"
+            />
+          </div>
+          <div class="slide-nav-2 w-slider-nav w-round">
+            <div
+              class="w-slider-dot"
+              data-wf-ignore=""
+              aria-label="Show slide 1 of 4"
+              aria-pressed="false"
+              role="button"
+              tabindex="-1"
+              style="margin-left: 3px; margin-right: 3px"
+            ></div>
+            <div
+              class="w-slider-dot"
+              data-wf-ignore=""
+              aria-label="Show slide 2 of 4"
+              aria-pressed="false"
+              role="button"
+              tabindex="-1"
+              style="margin-left: 3px; margin-right: 3px"
+            ></div>
+            <div
+              class="w-slider-dot"
+              data-wf-ignore=""
+              aria-label="Show slide 3 of 4"
+              aria-pressed="false"
+              role="button"
+              tabindex="-1"
+              style="margin-left: 3px; margin-right: 3px"
+            ></div>
+            <div
+              class="w-slider-dot w-active"
+              data-wf-ignore=""
+              aria-label="Show slide 4 of 4"
+              aria-pressed="true"
+              role="button"
+              tabindex="0"
+              style="margin-left: 3px; margin-right: 3px"
+            ></div>
+          </div>
+        </div>
+        <div class="w-layout-grid two-column-grid">
+          <div
+            id="w-node-_8aa532ff-ede3-f07c-b9b5-fe2a2330ec27-6f2c62d2"
+            class="flavor-image-div"
+          >
+            <div class="image-swiper">
+              <div class="swipe-wrapper berry">
+                <div class="berry-images">
+                  <h3
+                    data-w-id="a291c3f1-2d4b-eece-4c01-cf302c728dfa"
+                    class="swipe-text top is-prickly"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.3182px, 0.3182px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    JUICY<br />BLEND
+                  </h3>
+                  <h3
+                    data-w-id="d3f4113f-f704-a4a3-cea7-f52e47b32518"
+                    class="swipe-text bottom is-prickly"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.3182px, 0.3182px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    RIPE<br />PUNCH
+                  </h3>
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800.webp"
+                    data-w-id="8aa532ff-ede3-f07c-b9b5-fe2a2330ec2a"
+                    sizes="100vw"
+                    alt="strawberry image"
+                    srcset="
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800-p-500.webp 500w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800.webp       800w
+                    "
+                    class="image berry"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(0px, -0.1591px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  /><img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4.webp"
+                    data-w-id="8aa532ff-ede3-f07c-b9b5-fe2a2330ec29"
+                    sizes="100vw"
+                    alt="fresh berry"
+                    srcset="
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4-p-500.webp 500w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4.webp       735w
+                    "
+                    class="image _2"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.1591px, 0px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  />
+                  <div class="splash-swipe-div">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                  <div class="splash-swipe-div bottom">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swipe-wrapper prickly">
+                <div class="prickly-images">
+                  <h3
+                    data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979c1"
+                    class="swipe-text top"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.3182px, 5px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    CACTUS<br />FRUIT
+                  </h3>
+                  <h3
+                    data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979c5"
+                    class="swipe-text bottom"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.1591px, 0.1591px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    MELLOW<br />TART
+                  </h3>
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800.webp"
+                    data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979c9"
+                    sizes="100vw"
+                    alt="Pump"
+                    srcset="
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800-p-500.webp 500w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800.webp       800w
+                    "
+                    class="image pear"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.1591px, 0px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  /><img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear.webp"
+                    data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979ca"
+                    sizes="100vw"
+                    alt="Pear "
+                    srcset="
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear-p-500.webp 500w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear.webp       735w
+                    "
+                    class="image _2"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(0px, -0.1591px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  />
+                  <div class="splash-swipe-div">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                  <div class="splash-swipe-div bottom">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swipe-wrapper orange">
+                <div class="orange-images">
+                  <h3
+                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60ac"
+                    class="swipe-text top"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.3182px, 5px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    DEEP<br />CITRUS
+                  </h3>
+                  <h3
+                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60b0"
+                    class="swipe-text bottom"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.1591px, 0.1591px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    Tangy<br />Burst
+                  </h3>
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834fb4423947c0d02fe6f4_63192ba734235e6fc669e56f_fruit-blood-orange-p-500.webp"
+                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60b4"
+                    alt="Orange"
+                    class="image prickly"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.1591px, 0px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  /><img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange.webp"
+                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60b5"
+                    sizes="100vw"
+                    alt="blood orange"
+                    srcset="
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange-p-500.webp 500w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange.webp       735w
+                    "
+                    class="image _2"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(0px, -0.1591px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  />
+                  <div class="splash-swipe-div">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                  <div class="splash-swipe-div bottom">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swipe-wrapper _2">
+                <div class="lime-images">
+                  <img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835350896cd728bfdcb4d7_63193145bf52b21696226523_lime-p-500.webp"
+                    data-w-id="5d7b1bc3-933b-a3bc-ec48-2f9ba1a7ad9c"
+                    alt="Limon"
+                    class="lime"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-7.42045px, 0px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  /><img
+                    src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3.webp"
+                    data-w-id="5d7b1bc3-933b-a3bc-ec48-2f9ba1a7ad9d"
+                    sizes="100vw"
+                    alt="Lime"
+                    srcset="
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3-p-500.webp 500w,
+                      https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3.webp       735w
+                    "
+                    class="lime-can"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(0px, -0.1591px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  />
+                  <div class="splash-swipe-div">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                  <h3
+                    data-w-id="3a179d7d-db24-c58e-472f-3f25ae2316af"
+                    class="swipe-text bottom is-prickly"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(0.3182px, -0.3182px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    ZESTY<br />KICK
+                  </h3>
+                  <h3
+                    data-w-id="497763b5-5f7f-0594-9d60-21edddb31d1d"
+                    class="swipe-text top is-prickly"
+                    style="
+                      will-change: transform;
+                      transform: translate3d(-0.3182px, 0.3182px, 0px)
+                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                        rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    CITRUS<br />TWIST
+                  </h3>
+                  <div class="splash-swipe-div bottom">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+                      alt="Left Splash"
+                      class="splashy"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+                      alt="Right Svg"
+                      class="splashy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="w-node-_8aa532ff-ede3-f07c-b9b5-fe2a2330ec2d-6f2c62d2"
+            class="flavor-content-div"
+          >
+            <div class="rollover-item">
+              <div class="roll-over-header">
+                <h1 class="heading orange">Blood<br />Orange</h1>
+              </div>
+              <div class="flavor-grid">
+                <a
+                  data-color="#FFA852"
+                  data-text="BLOOD ORANGE"
+                  id="w-node-_827b7d64-2a5f-5516-0635-08b48e084d99-6f2c62d2"
+                  data-w-id="827b7d64-2a5f-5516-0635-08b48e084d99"
+                  href="#"
+                  class="link orange active w-inline-block"
+                >
+                  <div class="padding-image">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6317a73ac61f207951019c5e_orange-tile-inactive.svg"
+                      data-w-id="bde29086-6894-57d0-b56e-9a8809e20d3f"
+                      alt=""
+                      class="image-inactive"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63177f32064a375b0acaadf3_orange-tile.png"
+                      data-w-id="1183eede-dc50-8bde-d99b-80e7c01f59a2"
+                      alt="Orange Blood "
+                      class="image-active"
+                      style="opacity: 1; display: block"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63177f32064a375b0acaadf3_orange-tile.png"
+                      data-w-id="ab63bb05-110c-2556-608f-a483896722a7"
+                      alt="Orange Blood "
+                      class="image-hover"
+                      style="opacity: 0"
+                    />
+                  </div> </a
+                ><a
+                  data-color="#A8E572"
+                  data-text="LIME LEMON"
+                  id="w-node-_4e3818cd-2dfa-e20b-deda-209fa748ca63-6f2c62d2"
+                  data-w-id="4e3818cd-2dfa-e20b-deda-209fa748ca63"
+                  href="#"
+                  class="link green w-inline-block"
+                >
+                  <div class="padding-image">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6317b39bc6a80132a76a2fd4_lime-tile-inactive.svg"
+                      data-w-id="4e3818cd-2dfa-e20b-deda-209fa748ca65"
+                      alt=""
+                      class="image-inactive"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63177f714d6be8964b1d8a59_lime-tile.png"
+                      data-w-id="4e3818cd-2dfa-e20b-deda-209fa748ca64"
+                      alt="Lime Lemon "
+                      class="image-active"
+                      style="display: none; opacity: 0"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63177f714d6be8964b1d8a59_lime-tile.png"
+                      data-w-id="2105c073-6cb3-7e1c-bbba-70a7c1110584"
+                      alt="Lime Lemon "
+                      class="image-hover"
+                      style="opacity: 0"
+                    />
+                  </div> </a
+                ><a
+                  data-color="#E492F8"
+                  data-text="PRICKLY PEAR"
+                  id="w-node-bd2131da-88e7-8c76-a012-ef618571e779-6f2c62d2"
+                  data-w-id="bd2131da-88e7-8c76-a012-ef618571e779"
+                  href="#"
+                  class="link purple w-inline-block"
+                >
+                  <div class="padding-image">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6317b3bf632a200743289ef5_prickly-tile.svg"
+                      alt=""
+                      class="image-inactive"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6317a59a7fd2bd7b26790497_prickly-tile-active.svg"
+                      data-w-id="bd2131da-88e7-8c76-a012-ef618571e77b"
+                      alt="Prickly Pear"
+                      class="image-active"
+                      style="opacity: 0; display: none"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6317a59a7fd2bd7b26790497_prickly-tile-active.svg"
+                      data-w-id="5c0ca87e-c0f5-7f72-677d-dcc5a6b8ea62"
+                      alt="Prickly Pear"
+                      class="image-hover"
+                      style="opacity: 0"
+                    />
+                  </div> </a
+                ><a
+                  data-color="#FF7BB6"
+                  data-text="FRESH BERRY"
+                  id="w-node-a6cbc273-76bb-90ea-c566-372d822e058e-6f2c62d2"
+                  data-w-id="a6cbc273-76bb-90ea-c566-372d822e058e"
+                  href="#"
+                  class="link pink w-inline-block"
+                >
+                  <div class="padding-image">
+                    <img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6317b3e5c6a8010dc76a329f_berry-tile.svg"
+                      alt=""
+                      class="image-inactive"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63177f95ded51a40df915888_berry-tile.png"
+                      data-w-id="a6cbc273-76bb-90ea-c566-372d822e0590"
+                      alt="Strawberry "
+                      class="image-active"
+                      style="opacity: 0; display: none"
+                    /><img
+                      src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63177f95ded51a40df915888_berry-tile.png"
+                      data-w-id="655dfa17-c406-a7c3-7669-879adf9d226e"
+                      alt="Strawberry "
+                      class="image-hover"
+                      style="opacity: 0"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="rollover-sub">
+                <div
+                  data-w-id="dd3535ac-357f-f69a-dd45-6d7f892700c7"
+                  class="flavor-sub-wrapper _1"
+                  style="opacity: 0"
+                >
+                  <p class="roll-over-sub-text">
+                    Mouth watering punch of berries and citrus
+                  </p>
+                </div>
+                <div
+                  data-w-id="42b55848-4838-7305-c1c1-b07216409803"
+                  class="flavor-sub-wrapper _2"
+                  style="opacity: 0"
+                >
+                  <p class="roll-over-sub-text">
+                    Refreshingly crisp with <br />a zesty twist
+                  </p>
+                </div>
+                <div
+                  data-w-id="dc5db93a-b0d9-fdc1-981e-36f4069ca7c3"
+                  class="flavor-sub-wrapper _3"
+                  style="opacity: 0"
+                >
+                  <p class="roll-over-sub-text">
+                    Unexpectedly delicious <br />and smooth
+                  </p>
+                </div>
+                <div
+                  data-w-id="34ad93b4-ea4d-da3c-a74a-e7d3a8cbb0a2"
+                  class="flavor-sub-wrapper _4"
+                  style="opacity: 1"
+                >
+                  <p class="roll-over-sub-text">
+                    Bursting with sweet <br />citrus tang
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section-celebrating">
+        <div class="clebrate-content">
+          <div class="container-medium">
+            <div class="celebrate-header">
+              <h2 class="heading-8">WHAT’S IN ALZA?</h2>
+            </div>
+            <div class="celebrate-header">
+              <h1>Stuff worth celebrating</h1>
+            </div>
+            <div class="celebrate-text">
+              <p>
+                Alza blends some of the purest ingredients in the world to
+                create a well-balanced, slightly sweet, perfected tequila soda.
+              </p>
+            </div>
+          </div>
+          <div class="celebrate-slider w-slider">
+            <div class="mask aboutCarousel w-slider-mask" id="w-slider-mask-1">
+              <div class="aboutSlide w-slide">
+                <div class="celebrate-div">
+                  <div class="w-layout-grid clebrate-grid">
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc88ecf6ff3d348443c50_splash-double-large-lime.svg"
+                        alt=""
+                        class="splashy"
+                      />
+                    </div>
+                    <div class="geometric-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835af528dd1491f0d4aa26_630e729649f4535a96b1bc6e_tequila-tile.webp"
+                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 47vw, (max-width: 991px) 33vw, 28vw"
+                        srcset="
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835af528dd1491f0d4aa26_630e729649f4535a96b1bc6e_tequila-tile-p-500.webp 500w,
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835af528dd1491f0d4aa26_630e729649f4535a96b1bc6e_tequila-tile.webp       600w
+                        "
+                        alt="Tequila"
+                      />
+                    </div>
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc88ecf6ff3d348443c50_splash-double-large-lime.svg"
+                        alt=""
+                        class="splashy-2"
+                      />
+                    </div>
+                  </div>
+                  <div class="celebrate-item">
+                    <div class="container-medium margin-top margin-small">
+                      <div class="celebrate-header">
+                        <h2 class="heading-9">AWARD-WINNING MEXICAN TEQUILA</h2>
+                      </div>
+                      <div class="celebrate-text">
+                        <p>
+                          Our premium, award-winning tequila is smooth and
+                          crisp, without the bitterness that typically
+                          accompanies tequila.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aboutSlide w-slide">
+                <div class="celebrate-div">
+                  <div class="w-layout-grid clebrate-grid">
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc81e7f0735770bcc6197_splash-double-large.svg"
+                        alt=""
+                        class="splashy"
+                      />
+                    </div>
+                    <div class="geometric-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d644ba9754879134a_630e729635676f769b492b43_natural-tile.webp"
+                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 47vw, (max-width: 991px) 33vw, 28vw"
+                        srcset="
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d644ba9754879134a_630e729635676f769b492b43_natural-tile-p-500.webp 500w,
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d644ba9754879134a_630e729635676f769b492b43_natural-tile.webp       600w
+                        "
+                        alt="Mixed "
+                      />
+                    </div>
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc81e7f0735770bcc6197_splash-double-large.svg"
+                        alt=""
+                        class="splashy-2"
+                      />
+                    </div>
+                  </div>
+                  <div class="container-medium">
+                    <div class="celebrate-header">
+                      <h2 class="heading-10">ALL NATURAL INGREDIENTS</h2>
+                    </div>
+                    <div class="celebrate-text">
+                      <p>
+                        Our flavors are derived by extracting the
+                        naturally-occurring oils in fruit. This process removes
+                        any hint of bitterness, leaving only the purest essence
+                        of <br />each flavor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aboutSlide w-slide">
+                <div class="celebrate-div">
+                  <div class="w-layout-grid clebrate-grid">
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631251eb5fc4cc4aa11e8967_splash-double-large-orange.svg"
+                        alt=""
+                        class="splashy"
+                      />
+                    </div>
+                    <div class="geometric-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b64351b021286c8c8739f_630e7296b904b30ebfb149a5_sweet-tile.webp"
+                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 47vw, (max-width: 991px) 33vw, 28vw"
+                        srcset="
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b64351b021286c8c8739f_630e7296b904b30ebfb149a5_sweet-tile-p-500.webp 500w,
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b64351b021286c8c8739f_630e7296b904b30ebfb149a5_sweet-tile.webp       600w
+                        "
+                        alt="mixed"
+                      />
+                    </div>
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631251eb5fc4cc4aa11e8967_splash-double-large-orange.svg"
+                        alt=""
+                        class="splashy-2"
+                      />
+                    </div>
+                  </div>
+                  <div class="container-medium">
+                    <div class="celebrate-header">
+                      <h2 class="heading-11">SWEETENED WITH AGAVE NECTAR</h2>
+                    </div>
+                    <div class="celebrate-text">
+                      <p>
+                        Combine our award-winning tequila and flavor extracts
+                        with a hint of organic agave nectar, and your taste buds
+                        will be living the good life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aboutSlide w-slide">
+                <div class="celebrate-div">
+                  <div class="w-layout-grid clebrate-grid">
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631252560d093920add190dc_splash-double-large-berry.svg"
+                        alt=""
+                        class="splashy"
+                      />
+                    </div>
+                    <div class="geometric-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b64f9802c1efb403536a0_631253065fc4cc2cd61ea103_pack-tile-2.webp"
+                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 47vw, (max-width: 991px) 33vw, 28vw"
+                        srcset="
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b64f9802c1efb403536a0_631253065fc4cc2cd61ea103_pack-tile-2-p-500.webp 500w,
+                          https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b64f9802c1efb403536a0_631253065fc4cc2cd61ea103_pack-tile-2.webp       600w
+                        "
+                        alt="Four Cans"
+                      />
+                    </div>
+                    <div class="splash-holder">
+                      <img
+                        src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631252560d093920add190dc_splash-double-large-berry.svg"
+                        alt=""
+                        class="splashy-2"
+                      />
+                    </div>
+                  </div>
+                  <div class="container-medium">
+                    <div class="celebrate-header">
+                      <h2 class="heading-12">PARTY -ANYWHERE PACKAGING</h2>
+                    </div>
+                    <div class="celebrate-text">
+                      <p>
+                        Whether you’re at the beach, in a boardroom, at home, or
+                        outside under the stars, our recyclable cans are easy to
+                        bring along wherever the celebration takes you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="section-faq">
+        <div class="splahy-top_wrapper">
+          <div class="splashy_wrapper">
+            <img
+              src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+              alt=""
+            />
+          </div>
+          <div class="splashy_wrapper">
+            <img
+              src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="faq-header">
+          <h1>FAQs</h1>
+        </div>
+        <div class="faq-container">
+          <div class="faq-question-wrap w-dropdown">
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-0"
+            >
+              <div class="text-size-large">Why did we make ALZA?</div>
+              <div class="faq-circle">
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-0"
+              aria-labelledby="w-dropdown-toggle-0"
+            >
+              <p class="text-size-medium">
+                Long story short, a couple of friends bought mass-market hard
+                seltzer. After a day of partying on the beach, we all got
+                stomachaches. We started looking at the ingredients and realized
+                that we couldn’t identify what we were actually drinking. So we
+                decided to create a 100% all-natural tequila soda with complete
+                ingredient transparency.
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="058472dd-d77e-c40d-2c5c-abbc04ed2817"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-1"
+              aria-controls="w-dropdown-list-1"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">What does it taste like?</div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-1"
+              aria-labelledby="w-dropdown-toggle-1"
+            >
+              <p class="text-size-medium">
+                Since we only use natural ingredients, it pretty much tastes
+                like a tequila soda with splash of flavor, not to sweet but just
+                right! Ever had that perfect tequila soda with a splash of lime?
+                That’s what we are going for.
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="058472dd-d77e-c40d-2c5c-abbc04ed2822"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-2"
+              aria-controls="w-dropdown-list-2"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">
+                What is the difference between ALZA and hard seltzer?
+              </div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-2"
+              aria-labelledby="w-dropdown-toggle-2"
+            >
+              <p class="text-size-medium">
+                ALZA uses premium blanco tequila as its alcoholic base. Most
+                hard seltzers get their alcohol from fermented sugarcane or from
+                a malt based alcohol.
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="058472dd-d77e-c40d-2c5c-abbc04ed282d"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-3"
+              aria-controls="w-dropdown-list-3"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">Can I buy ALZA&nbsp;online?</div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-3"
+              aria-labelledby="w-dropdown-toggle-3"
+            >
+              <p class="text-size-medium">
+                Yes, we are actively working with our production and
+                distribution team to get ALZA sold online! We want you to feel
+                like you’re getting a good value, so we encourage you to buy 2
+                cases at a time so that your shipping cost is cut in half! Also,
+                look for us in a local store or get it delivered through
+                Drizzly, GoPuff, or Minibar!
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="3bc2507c-0c43-1268-9fe0-6cb55e3cf309"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-4"
+              aria-controls="w-dropdown-list-4"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">
+                Is ALZA&nbsp;gluten free?&nbsp;Vegan Friendly?
+                Kosher?&nbsp;Pareve?
+              </div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-4"
+              aria-labelledby="w-dropdown-toggle-4"
+            >
+              <p class="text-size-medium">
+                YES, YES, YES, YES!!!
+                <em
+                  >For a copy of our kosher certification, please email us at
+                  salud@drinkalza.com</em
+                >
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="ec67c806-73a2-e1af-85b9-102403981a93"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-5"
+              aria-controls="w-dropdown-list-5"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">How much Tequila do you use?</div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-5"
+              aria-labelledby="w-dropdown-toggle-5"
+            >
+              <p class="text-size-medium">
+                ALZA is made with premium blanco tequila and is 5.5% &nbsp;ABV,
+                or Alcohol By Volume!
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="1b5efc86-f844-2a19-926a-977cf6f289c0"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-6"
+              aria-controls="w-dropdown-list-6"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">
+                Does ALZA&nbsp;contain any know allergens?
+              </div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-6"
+              aria-labelledby="w-dropdown-toggle-6"
+            >
+              <p class="text-size-medium">
+                ALZA does not contain any FDA recognized major food allergens
+                nor is it produced in any facility that produces or packages any
+                ingredients that are identified as allergens. We got you
+                covered!
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="e26dd529-29b4-86d0-1a93-c64f34f2bd1b"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-7"
+              aria-controls="w-dropdown-list-7"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">
+                How long can ALZA&nbsp;sit on the shelf?
+              </div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-7"
+              aria-labelledby="w-dropdown-toggle-7"
+            >
+              <p class="text-size-medium">
+                Our shelf life testing indicates that ALZA is good for up to 2
+                years, however we recommend you drink it within 3 months to
+                ensure flavors are at peak yumminess!
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="da4121b2-8f13-0a52-76db-b759f5a5327a"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-8"
+              aria-controls="w-dropdown-list-8"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">
+                Will ALZA&nbsp;sponsor our team or our event?
+              </div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-8"
+              aria-labelledby="w-dropdown-toggle-8"
+            >
+              <p class="text-size-medium">
+                If your event is anywhere in South Florida, we are happy to
+                sponsor your event. We sponsor the following: Charities and
+                Fundraisers, Not For Profits, Religious Gatherings, Launch
+                Parties and Promotional Parties. Email us at salud@drinkalza.com
+                for more information.<br /><br />We will absolutely sponsor your
+                team. Contact us!
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="b0e1297d-b7d0-8a33-7e7d-527ebfb33ec9"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-9"
+              aria-controls="w-dropdown-list-9"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">
+                I'd like to learn more about your distillery!
+              </div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-9"
+              aria-labelledby="w-dropdown-toggle-9"
+            >
+              <p class="text-size-medium">
+                All of Destiladora Del Valle de Tequila Tequila’s are created
+                using traditional methods of manufacturing, acquire the best
+                agaves from the region of Tequila and the highlands and lowlands
+                of Jalisco, as well as combining the baking processes of both
+                traditional ovens covered in stone masonry and autoclaves.
+                Owners Celia and Michael have a combined experience of 72 years
+                to create an ultra smooth tequila for its customers. The main
+                goal was to create a source of employment in the region that
+                bear the name of high quality Tequila.
+              </p>
+            </nav>
+          </div>
+          <div
+            data-hover="false"
+            data-delay="0"
+            data-w-id="cf647929-9784-2de0-1765-863a5e133bbb"
+            class="faq-question-wrap w-dropdown"
+          >
+            <div
+              class="faq-question-bar w-dropdown-toggle"
+              id="w-dropdown-toggle-10"
+              aria-controls="w-dropdown-list-10"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              role="button"
+              tabindex="0"
+            >
+              <div class="text-size-large">
+                Can you show me a video of your distillery?
+              </div>
+              <div
+                style="
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="faq-circle"
+              >
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63125b303157c44b87e28034_faq-button.svg"
+                  alt="Faq Plus Button"
+                  class="plus-icon"
+                />
+              </div>
+            </div>
+            <nav
+              class="faq-content w-dropdown-list"
+              id="w-dropdown-list-10"
+              aria-labelledby="w-dropdown-toggle-10"
+            >
+              <div
+                style="padding-top: 56.27659574468085%"
+                class="w-video w-embed"
+              >
+                <iframe
+                  class="embedly-embed"
+                  scrolling="no"
+                  allowfullscreen=""
+                  title="ALZA Distillery"
+                  src="https://www.youtube-nocookie.com/embed/rOPfSW3czoQ?controls=0&amp;modestbranding=0&amp;rel=0"
+                ></iframe>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="splahy-bottom_wrapper">
+          <div class="splashy_wrapper">
+            <img
+              src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
+              alt=""
+            />
+          </div>
+          <div class="splashy_wrapper">
+            <img
+              src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7c64bf7c7a9ac4b9a_top%20right%20corner.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-images">
+        <div class="grid-image-carousell">
+          <div class="w-layout-grid image-grid _1">
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecef-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359aee0bff8eaa1c73916_630e729622d767c3cdb7c98a_tile%2015.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359aee0bff8eaa1c73916_630e729622d767c3cdb7c98a_tile%2015-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359aee0bff8eaa1c73916_630e729622d767c3cdb7c98a_tile%2015.webp       550w
+                "
+                alt="Strawberries in Diamond pattern"
+                class="image"
+              />
+            </div>
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecf1-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d46d984d3480028cd_630e72966f87c161019cfd37_tile%2014.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d46d984d3480028cd_630e72966f87c161019cfd37_tile%2014-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d46d984d3480028cd_630e72966f87c161019cfd37_tile%2014.webp       550w
+                "
+                alt="People jumping into a lake"
+                class="image"
+              />
+            </div>
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecf3-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359ba615b91de93d7a1ce_630e7297d3cb6020945cea06_tile%2016.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359ba615b91de93d7a1ce_630e7297d3cb6020945cea06_tile%2016-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359ba615b91de93d7a1ce_630e7297d3cb6020945cea06_tile%2016.webp       550w
+                "
+                alt="Lemon and Lime Dimond pattern"
+                class="image"
+              />
+            </div>
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecf5-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d34a9ae3ef813cdeb_630e729698fa5d7f2198d366_tile%2013.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d34a9ae3ef813cdeb_630e729698fa5d7f2198d366_tile%2013-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d34a9ae3ef813cdeb_630e729698fa5d7f2198d366_tile%2013.webp       550w
+                "
+                alt="Woman of color celebrating"
+                class="image"
+              />
+            </div>
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecf7-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553e7edeb6ff328ef0d3_630e72956a33137aaa18da03_tile%209.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553e7edeb6ff328ef0d3_630e72956a33137aaa18da03_tile%209-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553e7edeb6ff328ef0d3_630e72956a33137aaa18da03_tile%209.webp       550w
+                "
+                alt="Man grilling enjoying himself."
+                class="image"
+              />
+            </div>
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecf9-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553efdaa677829b0d365_630e7296e64add07d72a7cf9_tile%2012.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553efdaa677829b0d365_630e7296e64add07d72a7cf9_tile%2012-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553efdaa677829b0d365_630e7296e64add07d72a7cf9_tile%2012.webp       550w
+                "
+                alt="collage of fuit and cactus."
+                class="image"
+              />
+            </div>
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecfb-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b65c97ddb8e6ba4fa4179_630e72956a33136e1618da04_tile%2011.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b65c97ddb8e6ba4fa4179_630e72956a33136e1618da04_tile%2011-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b65c97ddb8e6ba4fa4179_630e72956a33136e1618da04_tile%2011.webp       550w
+                "
+                alt="Crowd of people dancing"
+                class="image"
+              />
+            </div>
+            <div
+              id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecfd-6f2c62d2"
+              class="square-image is-mobile"
+            >
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b62d8a0c5236eb03b9902_630e7296396f842cccfd945f_tile%2010.webp"
+                sizes="(max-width: 991px) 100vw, 96vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b62d8a0c5236eb03b9902_630e7296396f842cccfd945f_tile%2010-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b62d8a0c5236eb03b9902_630e7296396f842cccfd945f_tile%2010.webp       550w
+                "
+                alt="Orange slices in diamond pattern"
+                class="image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-images-mobile">
+        <div class="grid-image-carousell">
+          <div class="mobileImagesCarousel">
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359aee0bff8eaa1c73916_630e729622d767c3cdb7c98a_tile%2015.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359aee0bff8eaa1c73916_630e729622d767c3cdb7c98a_tile%2015-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359aee0bff8eaa1c73916_630e729622d767c3cdb7c98a_tile%2015.webp       550w
+                "
+                alt="Strawberries in Diamond pattern"
+                class="image"
+              />
+            </div>
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d46d984d3480028cd_630e72966f87c161019cfd37_tile%2014.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d46d984d3480028cd_630e72966f87c161019cfd37_tile%2014-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d46d984d3480028cd_630e72966f87c161019cfd37_tile%2014.webp       550w
+                "
+                alt="People jumping into a lake"
+                class="image"
+              />
+            </div>
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359ba615b91de93d7a1ce_630e7297d3cb6020945cea06_tile%2016.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359ba615b91de93d7a1ce_630e7297d3cb6020945cea06_tile%2016-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648359ba615b91de93d7a1ce_630e7297d3cb6020945cea06_tile%2016.webp       550w
+                "
+                alt="Lemon and Lime Dimond pattern"
+                class="image"
+              />
+            </div>
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d34a9ae3ef813cdeb_630e729698fa5d7f2198d366_tile%2013.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d34a9ae3ef813cdeb_630e729698fa5d7f2198d366_tile%2013-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553d34a9ae3ef813cdeb_630e729698fa5d7f2198d366_tile%2013.webp       550w
+                "
+                alt="Woman of color celebrating"
+                class="image"
+              />
+            </div>
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553efdaa677829b0d365_630e7296e64add07d72a7cf9_tile%2012.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553efdaa677829b0d365_630e7296e64add07d72a7cf9_tile%2012-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553efdaa677829b0d365_630e7296e64add07d72a7cf9_tile%2012.webp       550w
+                "
+                alt="collage of fuit and cactus."
+                class="image"
+              />
+            </div>
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553e7edeb6ff328ef0d3_630e72956a33137aaa18da03_tile%209.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553e7edeb6ff328ef0d3_630e72956a33137aaa18da03_tile%209-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483553e7edeb6ff328ef0d3_630e72956a33137aaa18da03_tile%209.webp       550w
+                "
+                alt="Man grilling enjoying himself."
+                class="image"
+              />
+            </div>
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b62d8a0c5236eb03b9902_630e7296396f842cccfd945f_tile%2010.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b62d8a0c5236eb03b9902_630e7296396f842cccfd945f_tile%2010-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b62d8a0c5236eb03b9902_630e7296396f842cccfd945f_tile%2010.webp       550w
+                "
+                alt="Orange slices in diamond pattern"
+                class="image"
+              />
+            </div>
+            <div class="square-image is-mobile">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b65c97ddb8e6ba4fa4179_630e72956a33136e1618da04_tile%2011.webp"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 35vw, 100vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b65c97ddb8e6ba4fa4179_630e72956a33136e1618da04_tile%2011-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b65c97ddb8e6ba4fa4179_630e72956a33136e1618da04_tile%2011.webp       550w
+                "
+                alt="Crowd of people dancing"
+                class="image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="find"></section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container-medium">
+          <div class="w-layout-grid footer-grid">
+            <div>
+              <p class="text-size-medium f-center text-align-center">
+                ALZA Tequila Soda<br />Born in Miami
+              </p>
+            </div>
+            <a href="#" class="footer-div is-mobile-spacing">
+              <div class="super-splash-mobile is-top">
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631262ac0934f7895945b26c_super-splash.svg"
+                  alt=""
+                  class="image-8"
+                />
+              </div>
+              <h1 class="heading-2">@drinkalza</h1>
+              <div class="super-splash-mobile is-bottom">
+                <img
+                  src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631262ac0934f7895945b26c_super-splash.svg"
+                  alt=""
+                  class="image-9"
+                />
+              </div>
+            </a>
+            <div>
+              <p class="text-size-medium text-align-center f-center">
+                <a href="tel:1844-444-2592" class="phone-number"
+                  >844-444-ALZA</a
+                >
+              </p>
+              <p class="text-size-medium text-align-center f-center">
+                <a
+                  href="mailto:salud@drinkalza.com?subject=Find%20the%20good%20stuff!"
+                  class="link-2"
+                  >salud@drinkalza.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousell-div">
+          <div class="footerCarousell">
+            <div class="square-image-footer">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b672019a1d6f9824a46cb_6478ea61d3f9eabb98b94900_n-footer-can%202-p-800.webp"
+                sizes="(max-width: 479px) 50vw, 26vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b672019a1d6f9824a46cb_6478ea61d3f9eabb98b94900_n-footer-can%202-p-800-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b672019a1d6f9824a46cb_6478ea61d3f9eabb98b94900_n-footer-can%202-p-800.webp       800w
+                "
+                alt="Green Can"
+                class="image-footer"
+              />
+            </div>
+            <div class="square-image-footer">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b6703a3f8f07560e8e3aa_6478ece3a33633cacf039807_n-footer-can%203-p-800.webp"
+                sizes="(max-width: 479px) 50vw, 26vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b6703a3f8f07560e8e3aa_6478ece3a33633cacf039807_n-footer-can%203-p-800-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b6703a3f8f07560e8e3aa_6478ece3a33633cacf039807_n-footer-can%203-p-800.webp       800w
+                "
+                alt="Pink can"
+                class="image-footer"
+              />
+            </div>
+            <div class="square-image-footer">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b66ed914e88ded3c8e297_6478ee645eb71eb9d3df07ed_n-footer-can-1-p-800.webp"
+                sizes="(max-width: 479px) 50vw, 26vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b66ed914e88ded3c8e297_6478ee645eb71eb9d3df07ed_n-footer-can-1-p-800-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b66ed914e88ded3c8e297_6478ee645eb71eb9d3df07ed_n-footer-can-1-p-800.webp       800w
+                "
+                alt="orange"
+                class="image-footer"
+              />
+            </div>
+            <div class="square-image-footer">
+              <img
+                src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b6703a3f8f07560e8e3aa_6478ece3a33633cacf039807_n-footer-can%203-p-800.webp"
+                sizes="(max-width: 479px) 50vw, 26vw"
+                srcset="
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b6703a3f8f07560e8e3aa_6478ece3a33633cacf039807_n-footer-can%203-p-800-p-500.webp 500w,
+                  https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/648b6703a3f8f07560e8e3aa_6478ece3a33633cacf039807_n-footer-can%203-p-800.webp       800w
+                "
+                alt="Pink Can"
+                class="image-footer"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-rights-text">
+          <p class="text-size-medium foot-hide">
+            © Copyright 2020 - 2023 Lali Brands, Co. <br />All Right Reserved -
+            <a href="/legal" target="_blank" class="link-link">Legal</a>
+          </p>
+          <div class="div-block-9">
+            <div class="text-block-4 my-foot-txt">© Copyright 2020 -</div>
+            <div id="change-cust-txt" class="text-block-5 my-foot-txt">
+              2023
+            </div>
+            <div class="text-block-6 my-foot-txt">Lali Brands, Co.</div>
+          </div>
+          <p id="original-foot" class="paragraph-3 my-foot-txt">
+            All Right Reserved -
+            <a href="/legal" target="_blank" class="link-link">Legal</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- For Slick script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".footerCarousell").slick({
+          speed: 5000,
+          autoplay: true,
+          autoplaySpeed: 0,
+          cssEase: "linear",
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          variableWidth: true,
+          dots: false,
+          loop: true,
+          arrows: false,
+          infinite: true,
+        });
+        $(".aboutCarousel").slick({
+          speed: 5000,
+          autoplay: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          dots: true,
+          loop: true,
+          arrows: false,
+          infinite: true,
+        });
+
+        if (document.innerWidth < 992) {
+          $(".mobileImagesCarousel").slick({
+            speed: 5000,
+            autoplay: true,
+            autoplaySpeed: 50,
+            cssEase: "linear",
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: true,
+            dots: false,
+            arrows: false,
+            infinite: true,
+          });
+        }
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

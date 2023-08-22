@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Slider</title>
+    <!-- For Styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- jquery library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      .carousel {
+        overflow: hidden;
+        width: 300px; /* Set your carousel width */
+        margin: 0 auto;
+      }
+
+      .slides-container {
+        display: flex;
+        transition: transform 1s linear; /* Constant speed animation */
+      }
+
+      .slide {
+        flex: 0 0 100%; /* Adjust slide width as needed */
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="slides-container">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+    <!-- // For script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $section8Carousel = $(".carousel-container").slick({
+          speed: 9000,
+          autoplay: true,
+          autoplaySpeed: 0,
+          cssEase: "linear",
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          variableWidth: true,
+
+          dots: false,
+          arrows: false,
+          // appendDots: $(".carousel-container"),
+          initialSlide: 1,
+
+          responsive: [
+            {
+              breakpoint: 770, // When screen width is 770px or less
+              settings: {
+                slidesToShow: 1,
+                centerMode: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
