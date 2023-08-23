@@ -1,5 +1,26 @@
 //For Smoothly Handling The Scroll Up and Scroll Down
-let prevScrollPos = window.scrollY;
+
+let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+window.addEventListener(
+  "scroll",
+  function handleScroll() {
+    const scrollTopPosition =
+      window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTopPosition > lastScrollTop) {
+      $(".navbar").addClass("hidden");
+      console.log("scrolling down");
+    } else if (scrollTopPosition < lastScrollTop) {
+      $(".navbar").removeClass("hidden");
+      console.log("scrolling up");
+    }
+    lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
+  },
+  false
+);
+
+/*let prevScrollPos = window.scrollY;
 let isAtTop = prevScrollPos === 0;
 
 $(document).ready(function () {
@@ -11,7 +32,7 @@ $(document).ready(function () {
     if (currentScrollPos === 0) {
       // Reset the flag when the user scrolls back to the top
       isAtTop = true;
-    } else if (isAtTop && currentScrollPos > 0) {
+    } else if (isAtTop || currentScrollPos > 0) {
       // Handle initial scroll from the top
       isAtTop = false;
       $(".navbar").addClass("hidden");
@@ -27,7 +48,7 @@ $(document).ready(function () {
 
     prevScrollPos = currentScrollPos;
   });
-});
+});*/
 
 //Hamburger
 let hamburger = document.getElementById("hamburger-link");
