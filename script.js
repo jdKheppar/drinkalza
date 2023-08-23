@@ -10,52 +10,70 @@ window.addEventListener(
 
     if (scrollTopPosition > lastScrollTop) {
       $(".navbar").addClass("hidden");
-      console.log("scrolling down");
+      //console.log("scrolling down");
     } else if (scrollTopPosition < lastScrollTop) {
       $(".navbar").removeClass("hidden");
-      console.log("scrolling up");
+      //console.log("scrolling up");
     }
     lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
   },
   false
 );
 
-/*let prevScrollPos = window.scrollY;
-let isAtTop = prevScrollPos === 0;
-
-$(document).ready(function () {
-  prevScrollPos = window.scrollY; // Initialize prevScrollPos
-
-  $(window).on("scroll", function () {
-    const currentScrollPos = window.scrollY;
-
-    if (currentScrollPos === 0) {
-      // Reset the flag when the user scrolls back to the top
-      isAtTop = true;
-    } else if (isAtTop || currentScrollPos > 0) {
-      // Handle initial scroll from the top
-      isAtTop = false;
-      $(".navbar").addClass("hidden");
-    }
-
-    if (prevScrollPos > currentScrollPos) {
-      // User is scrolling up, show navbar
-      $(".navbar").removeClass("hidden");
-    } else {
-      // User is scrolling down, hide navbar
-      $(".navbar").addClass("hidden");
-    }
-
-    prevScrollPos = currentScrollPos;
-  });
-});*/
-
 //Hamburger
+// let hamburger = document.getElementById("hamburger-link");
+// let mobileLinkDiv = document.getElementById("mobile-link-div");
+// let xHold = document.getElementById("x-hold");
+// hamburger.addEventListener("click", () => {
+//   mobileLinkDiv.style.transform = "translateX(0)";
+//   $(".hamburger-line").hide();
+//   xHold.style.display = "flex";
+// });
 let hamburger = document.getElementById("hamburger-link");
 let mobileLinkDiv = document.getElementById("mobile-link-div");
+let xHold = document.getElementById("x-hold");
+
 hamburger.addEventListener("click", () => {
-  mobileLinkDiv.style.display = "flex";
-  hamburger.style.display = "none";
+  if ($(".hamburger-line").is(":hidden")) {
+    mobileLinkDiv.style.transform = "translateX(100%)";
+    $(".hamburger-line").show();
+    xHold.style.display = "none";
+  } else {
+    mobileLinkDiv.style.transform = "translateX(0)";
+    $(".hamburger-line").hide();
+    xHold.style.display = "flex";
+  }
+});
+
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileLinkDiv.style.transform = "translateX(100%)";
+
+    $(".hamburger-line").css("display", "block");
+  });
+});
+xHold.addEventListener("click", function () {
+  console.log("xhold clicked");
+
+  mobileLinkDiv.style.transform = "translateX(100%)";
+  $(".hamburger-line").css("display", "block");
+});
+
+// Section Favor
+// $(".padding-image").click(function () {
+//   $(".image-active").hide().css("opacity", 0);
+//   $(this).find(".image-active").show().css("opacity", 1);
+// });
+
+$(".link").click(function () {
+  const color = $(this).data("color");
+  const text = $(this).data("text");
+
+  $(".image-active").hide().css("opacity", 0);
+  $(this).find(".image-active").show().css("opacity", 1);
+
+  $(".heading").text(text).css("color", color);
 });
 
 // const faqQuestionBars = document.querySelectorAll(".faq-question-bar");

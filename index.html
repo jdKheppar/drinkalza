@@ -34,11 +34,7 @@
             alt="Cross Button"
             class="x-image"
           />
-          <div
-            data-w-id="8a5884c5-1c3e-dffb-059a-afc61b6ba941"
-            class="x-hold"
-            style="display: none"
-          >
+          <div class="x-hold" id="x-hold" style="display: none">
             <div class="line-2"></div>
             <div class="line-1"></div>
           </div>
@@ -55,9 +51,9 @@
       <nav class="navbar">
         <nav class="nav-desktop">
           <div class="nav-desktop-menu">
-            <a href="#flavor" class="nav-link">FLAVORS</a>
+            <a href="#flavor" class="nav-linkD">FLAVORS</a>
             <div class="circle"></div>
-            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#about" class="nav-linkD">ABOUT</a>
             <div class="circle"></div>
             <a href="#Home" class="brand w-nav-brand w--current"
               ><img
@@ -66,9 +62,9 @@
                 alt="logo image"
             /></a>
             <div class="circle"></div>
-            <a href="#faq" class="nav-link">FAQS</a>
+            <a href="#faq" class="nav-linkD">FAQS</a>
             <div class="circle"></div>
-            <a href="#Find-the-good-stuff" class="nav-link">FIND ALZA</a>
+            <a href="#find" class="nav-linkD">FIND ALZA</a>
           </div>
         </nav>
       </nav>
@@ -187,32 +183,9 @@
         </div>
       </section>
       <section id="flavor" class="section-flavor">
-        <div
-          data-delay="2000"
-          data-animation="slide"
-          class="slider-flavor w-slider"
-          data-autoplay="true"
-          data-easing="ease"
-          data-hide-arrows="false"
-          data-disable-swipe="false"
-          data-autoplay-limit="0"
-          data-nav-spacing="3"
-          data-duration="200"
-          data-infinite="true"
-          role="region"
-          aria-label="carousel"
-        >
+        <div class="slider-flavor w-slider">
           <div class="w-slider-mask" id="w-slider-mask-0">
-            <div
-              class="w-slide"
-              aria-label="1 of 4"
-              role="group"
-              style="
-                transform: translateX(-3216px);
-                opacity: 1;
-                transition: transform 200ms ease 0s;
-              "
-            >
+            <div class="w-slide">
               <div class="w-layout-grid mobile-grid">
                 <div
                   id="w-node-d4c088a2-d4a9-a3a3-f76a-b3984286d165-6f2c62d2"
@@ -276,16 +249,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="w-slide"
-              aria-label="2 of 4"
-              role="group"
-              style="
-                transform: translateX(-3216px);
-                opacity: 1;
-                transition: transform 200ms ease 0s;
-              "
-            >
+            <div class="w-slide">
               <div class="w-layout-grid mobile-grid">
                 <div
                   id="w-node-_7266ad45-29c9-6b83-9ed4-21096d0eb8ec-6f2c62d2"
@@ -354,16 +318,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="w-slide"
-              aria-label="3 of 4"
-              role="group"
-              style="
-                transform: translateX(-3216px);
-                opacity: 1;
-                transition: transform 200ms ease 0s;
-              "
-            >
+            <div class="w-slide">
               <div class="w-layout-grid mobile-grid">
                 <div
                   id="w-node-_75544583-6d34-d9cf-0c4f-86d1a30299c4-6f2c62d2"
@@ -429,16 +384,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="w-slide"
-              aria-label="4 of 4"
-              role="group"
-              style="
-                transform: translateX(-3216px);
-                opacity: 1;
-                transition: transform 200ms ease 0s;
-              "
-            >
+            <div class="w-slide">
               <div class="w-layout-grid mobile-grid">
                 <div
                   id="w-node-c851625c-34a2-1169-cb0e-712177a2aacb-6f2c62d2"
@@ -509,14 +455,7 @@
                 </div>
               </div>
             </div>
-            <div
-              aria-live="off"
-              aria-atomic="true"
-              class="w-slider-aria-label"
-              data-wf-ignore=""
-            >
-              Slide 4 of 4.
-            </div>
+            <div class="w-slider-aria-label">Slide 4 of 4.</div>
           </div>
           <div class="left-arrow w-slider-arrow-left">
             <img
@@ -537,33 +476,9 @@
               class="w-slider-dot"
               style="margin-left: 3px; margin-right: 3px"
             ></div>
-            <div
-              class="w-slider-dot"
-              data-wf-ignore=""
-              aria-label="Show slide 2 of 4"
-              aria-pressed="false"
-              role="button"
-              tabindex="-1"
-              style="margin-left: 3px; margin-right: 3px"
-            ></div>
-            <div
-              class="w-slider-dot"
-              data-wf-ignore=""
-              aria-label="Show slide 3 of 4"
-              aria-pressed="false"
-              role="button"
-              tabindex="-1"
-              style="margin-left: 3px; margin-right: 3px"
-            ></div>
-            <div
-              class="w-slider-dot w-active"
-              data-wf-ignore=""
-              aria-label="Show slide 4 of 4"
-              aria-pressed="true"
-              role="button"
-              tabindex="0"
-              style="margin-left: 3px; margin-right: 3px"
-            ></div>
+            <div class="w-slider-dot"></div>
+            <div class="w-slider-dot"></div>
+            <div class="w-slider-dot w-active"></div>
           </div>
         </div>
         <div class="w-layout-grid two-column-grid">
@@ -574,35 +489,10 @@
             <div class="image-swiper">
               <div class="swipe-wrapper berry">
                 <div class="berry-images">
-                  <h3
-                    data-w-id="a291c3f1-2d4b-eece-4c01-cf302c728dfa"
-                    class="swipe-text top is-prickly"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.3182px, 0.3182px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    JUICY<br />BLEND
-                  </h3>
-                  <h3
-                    data-w-id="d3f4113f-f704-a4a3-cea7-f52e47b32518"
-                    class="swipe-text bottom is-prickly"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.3182px, 0.3182px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    RIPE<br />PUNCH
-                  </h3>
+                  <h3 class="swipe-text top is-prickly">JUICY<br />BLEND</h3>
+                  <h3 class="swipe-text bottom is-prickly">RIPE<br />PUNCH</h3>
                   <img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800.webp"
-                    data-w-id="8aa532ff-ede3-f07c-b9b5-fe2a2330ec2a"
                     sizes="100vw"
                     alt="strawberry image"
                     srcset="
@@ -610,16 +500,8 @@
                       https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f38f9964c99a1ec11ac_6319e8d2a4b97073defc0f2d_fruit-fresh-berry-p-800.webp       800w
                     "
                     class="image berry"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -0.1591px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   /><img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4.webp"
-                    data-w-id="8aa532ff-ede3-f07c-b9b5-fe2a2330ec29"
                     sizes="100vw"
                     alt="fresh berry"
                     srcset="
@@ -627,13 +509,6 @@
                       https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836173471e6e377b9600cc_4.webp       735w
                     "
                     class="image _2"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.1591px, 0px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   />
                   <div class="splash-swipe-div">
                     <img
@@ -661,32 +536,8 @@
               </div>
               <div class="swipe-wrapper prickly">
                 <div class="prickly-images">
-                  <h3
-                    data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979c1"
-                    class="swipe-text top"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.3182px, 5px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    CACTUS<br />FRUIT
-                  </h3>
-                  <h3
-                    data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979c5"
-                    class="swipe-text bottom"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.1591px, 0.1591px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    MELLOW<br />TART
-                  </h3>
+                  <h3 class="swipe-text top">CACTUS<br />FRUIT</h3>
+                  <h3 class="swipe-text bottom">MELLOW<br />TART</h3>
                   <img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800.webp"
                     data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979c9"
@@ -697,16 +548,8 @@
                       https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834f73729998d472430523_6324e714c51fd084efcb0288_fruit-prickly-pear-large-p-800.webp       800w
                     "
                     class="image pear"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.1591px, 0px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   /><img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear.webp"
-                    data-w-id="7bd6cd3a-c432-3b6f-5b70-68f81bd979ca"
                     sizes="100vw"
                     alt="Pear "
                     srcset="
@@ -714,13 +557,6 @@
                       https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/6483477a03a70b374bc45ffd_647906008c9f59a184ab798a_n-alza-can-prickly-pear.webp       735w
                     "
                     class="image _2"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -0.1591px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   />
                   <div class="splash-swipe-div">
                     <img
@@ -748,47 +584,14 @@
               </div>
               <div class="swipe-wrapper orange">
                 <div class="orange-images">
-                  <h3
-                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60ac"
-                    class="swipe-text top"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.3182px, 5px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    DEEP<br />CITRUS
-                  </h3>
-                  <h3
-                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60b0"
-                    class="swipe-text bottom"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.1591px, 0.1591px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    Tangy<br />Burst
-                  </h3>
+                  <h3 class="swipe-text top">DEEP<br />CITRUS</h3>
+                  <h3 class="swipe-text bottom">Tangy<br />Burst</h3>
                   <img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834fb4423947c0d02fe6f4_63192ba734235e6fc669e56f_fruit-blood-orange-p-500.webp"
-                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60b4"
                     alt="Orange"
                     class="image prickly"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.1591px, 0px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   /><img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange.webp"
-                    data-w-id="1b5b5dce-6771-4d4e-82c0-0053109a60b5"
                     sizes="100vw"
                     alt="blood orange"
                     srcset="
@@ -796,13 +599,6 @@
                       https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835e599dea78c35f49a172_647906002a53c9cc3e85cf18_n-alza-can-blood-orange.webp       735w
                     "
                     class="image _2"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -0.1591px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   />
                   <div class="splash-swipe-div">
                     <img
@@ -832,19 +628,10 @@
                 <div class="lime-images">
                   <img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835350896cd728bfdcb4d7_63193145bf52b21696226523_lime-p-500.webp"
-                    data-w-id="5d7b1bc3-933b-a3bc-ec48-2f9ba1a7ad9c"
                     alt="Limon"
                     class="lime"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-7.42045px, 0px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   /><img
                     src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3.webp"
-                    data-w-id="5d7b1bc3-933b-a3bc-ec48-2f9ba1a7ad9d"
                     sizes="100vw"
                     alt="Lime"
                     srcset="
@@ -852,13 +639,6 @@
                       https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64836117074182433c34b880_3.webp       735w
                     "
                     class="lime-can"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0px, -0.1591px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
                   />
                   <div class="splash-swipe-div">
                     <img
@@ -871,32 +651,8 @@
                       class="splashy"
                     />
                   </div>
-                  <h3
-                    data-w-id="3a179d7d-db24-c58e-472f-3f25ae2316af"
-                    class="swipe-text bottom is-prickly"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(0.3182px, -0.3182px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    ZESTY<br />KICK
-                  </h3>
-                  <h3
-                    data-w-id="497763b5-5f7f-0594-9d60-21edddb31d1d"
-                    class="swipe-text top is-prickly"
-                    style="
-                      will-change: transform;
-                      transform: translate3d(-0.3182px, 0.3182px, 0px)
-                        scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                        rotateZ(0deg) skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    "
-                  >
-                    CITRUS<br />TWIST
-                  </h3>
+                  <h3 class="swipe-text bottom is-prickly">ZESTY<br />KICK</h3>
+                  <h3 class="swipe-text top is-prickly">CITRUS<br />TWIST</h3>
                   <div class="splash-swipe-div bottom">
                     <img
                       src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630e72a7e64add4b5b2a7d7a_top%20left%20corner.svg"
@@ -944,9 +700,8 @@
                     /><img
                       src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/63177f32064a375b0acaadf3_orange-tile.png"
                       data-w-id="ab63bb05-110c-2556-608f-a483896722a7"
-                      alt="Orange Blood "
+                      alt="Orange Blood"
                       class="image-hover"
-                      style="opacity: 0"
                     />
                   </div> </a
                 ><a
@@ -974,7 +729,6 @@
                       data-w-id="2105c073-6cb3-7e1c-bbba-70a7c1110584"
                       alt="Lime Lemon "
                       class="image-hover"
-                      style="opacity: 0"
                     />
                   </div> </a
                 ><a
@@ -1001,7 +755,6 @@
                       data-w-id="5c0ca87e-c0f5-7f72-677d-dcc5a6b8ea62"
                       alt="Prickly Pear"
                       class="image-hover"
-                      style="opacity: 0"
                     />
                   </div> </a
                 ><a
@@ -1028,7 +781,6 @@
                       data-w-id="655dfa17-c406-a7c3-7669-879adf9d226e"
                       alt="Strawberry "
                       class="image-hover"
-                      style="opacity: 0"
                     />
                   </div>
                 </a>
@@ -1061,11 +813,7 @@
                     Unexpectedly delicious <br />and smooth
                   </p>
                 </div>
-                <div
-                  data-w-id="34ad93b4-ea4d-da3c-a74a-e7d3a8cbb0a2"
-                  class="flavor-sub-wrapper _4"
-                  style="opacity: 1"
-                >
+                <div class="flavor-sub-wrapper _4" style="opacity: 1">
                   <p class="roll-over-sub-text">
                     Bursting with sweet <br />citrus tang
                   </p>
@@ -1077,70 +825,19 @@
       </section>
       <section class="section-vibrant">
         <div class="w-layout-grid vibrant-grid">
-          <div
-            id="w-node-_765784bb-cbb3-79af-450b-e941bedfab4d-6f2c62d2"
-            class="vibrant-content"
-          >
+          <div class="vibrant-content">
             <div class="vibrant-item">
               <div class="vibrant-sub-header">
                 <h2 class="heading-7">Celebrate the good stuff</h2>
               </div>
-              <div class="image-change-header">
-                <h2
-                  class="vibrant-hedaer green"
-                  style="
-                    transform: translate3d(0px, -285.2%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    will-change: transform;
-                  "
-                >
-                  shared<br />experiences
-                </h2>
-                <h2
-                  class="vibrant-hedaer purple"
-                  style="
-                    transform: translate3d(0px, -285.2%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    will-change: transform;
-                  "
-                >
+              <div class="image-change-header vibrant-text-carousel">
+                <h2 class="vibrant-hedaer green">shared<br />experiences</h2>
+                <h2 class="vibrant-hedaer purple">
                   vibrant<br />conversations
                 </h2>
-                <h2
-                  class="vibrant-hedaer orange"
-                  style="
-                    transform: translate3d(0px, -285.2%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    will-change: transform;
-                  "
-                >
-                  playful<br />moments
-                </h2>
-                <h2
-                  class="vibrant-hedaer pink"
-                  style="
-                    transform: translate3d(0px, -285.2%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    will-change: transform;
-                  "
-                >
-                  colorful<br />parties
-                </h2>
-                <h2
-                  class="vibrant-hedaer green"
-                  style="
-                    transform: translate3d(0px, -285.2%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                    will-change: transform;
-                  "
-                >
-                  shared<br />experiences
-                </h2>
+                <h2 class="vibrant-hedaer orange">playful<br />moments</h2>
+                <h2 class="vibrant-hedaer pink">colorful<br />parties</h2>
+                <h2 class="vibrant-hedaer green">shared<br />experiences</h2>
               </div>
               <div class="virbant-text">
                 <p class="text-size-medium">
@@ -1164,11 +861,9 @@
             id="w-node-_75198f75-dbf6-3b9c-d2a2-e2456fb0e3c1-6f2c62d2"
             class="vibrant-image-div"
           >
-            <div class="image-1-1--vibrant">
+            <div class="image-1-1--vibrant vibrant-img-carousel">
               <img
                 src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834d8175bf953fde9d989e_6345a03c9904bc87fae65745_celebrate-image-fpo-purple-p-800.webp"
-                loading="lazy"
-                data-w-id="33c72145-eb7a-2700-c4f1-aa5c677fbdc5"
                 sizes="100vw"
                 alt="Celebrate image fpo pink"
                 srcset="
@@ -1176,11 +871,8 @@
                   https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834d8175bf953fde9d989e_6345a03c9904bc87fae65745_celebrate-image-fpo-purple-p-800.webp       800w
                 "
                 class="image-vibrant"
-                style="opacity: 0.852; will-change: opacity"
               /><img
                 src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834d81ee28fa9727ea90a8_6345a03dacbccb865edba182_celebrate-image-fpo-pink-p-800.webp"
-                loading="lazy"
-                data-w-id="4a64c4b4-b701-6f1b-2b70-876b1ce4d48f"
                 sizes="100vw"
                 alt="Celebrate image fpo purple"
                 srcset="
@@ -1188,11 +880,9 @@
                   https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834d81ee28fa9727ea90a8_6345a03dacbccb865edba182_celebrate-image-fpo-pink-p-800.webp       800w
                 "
                 class="image-vibrant _1"
-                style="opacity: 0; will-change: opacity"
               /><img
                 src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835350f393d5885ac34abb_6345a03dd780b559b2f7bc6a_celebrate-image-fpo-orange-p-800.webp"
                 loading="lazy"
-                data-w-id="cb5eaf58-ac42-7a24-8477-39f1566373dc"
                 sizes="100vw"
                 alt="Swim"
                 srcset="
@@ -1200,11 +890,9 @@
                   https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64835350f393d5885ac34abb_6345a03dd780b559b2f7bc6a_celebrate-image-fpo-orange-p-800.webp       800w
                 "
                 class="image-vibrant"
-                style="opacity: 0.01664; will-change: opacity"
               /><img
                 src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834d81ee28fa9727ea904b_6345a03d0c7aab9fc1297560_celebrate-image-fpo-lime-p-800.webp"
                 loading="lazy"
-                data-w-id="40e2d784-87fc-6905-02bb-7192726c38cd"
                 sizes="100vw"
                 alt="celebrate image fpo lime"
                 srcset="
@@ -1212,7 +900,6 @@
                   https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/64834d81ee28fa9727ea904b_6345a03d0c7aab9fc1297560_celebrate-image-fpo-lime-p-800.webp       800w
                 "
                 class="image-vibrant"
-                style="opacity: 0; will-change: opacity"
               />
             </div>
           </div>
@@ -1257,7 +944,7 @@
                         alt="Tequila"
                       />
                     </div>
-                    <div class="splash-holder">
+                    <div class="splash-holder" id="aboutSplash2">
                       <img
                         src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc88ecf6ff3d348443c50_splash-double-large-lime.svg"
                         alt=""
@@ -1302,7 +989,7 @@
                         alt="Mixed "
                       />
                     </div>
-                    <div class="splash-holder">
+                    <div class="splash-holder" id="aboutSplash2">
                       <img
                         src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/630fc81e7f0735770bcc6197_splash-double-large.svg"
                         alt=""
@@ -1346,7 +1033,7 @@
                         alt="mixed"
                       />
                     </div>
-                    <div class="splash-holder">
+                    <div class="splash-holder" id="aboutSplash2">
                       <img
                         src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631251eb5fc4cc4aa11e8967_splash-double-large-orange.svg"
                         alt=""
@@ -1389,7 +1076,7 @@
                         alt="Four Cans"
                       />
                     </div>
-                    <div class="splash-holder">
+                    <div class="splash-holder" id="aboutSplash2">
                       <img
                         src="https://uploads-ssl.webflow.com/6309080f8d5ccaaa78cd49f8/631252560d093920add190dc_splash-double-large-berry.svg"
                         alt=""
@@ -1399,7 +1086,7 @@
                   </div>
                   <div class="container-medium">
                     <div class="celebrate-header">
-                      <h2 class="heading-12">PARTY -ANYWHERE PACKAGING</h2>
+                      <h2 class="heading-11">PARTY -ANYWHERE PACKAGING</h2>
                     </div>
                     <div class="celebrate-text">
                       <p>
@@ -1448,11 +1135,7 @@
                 />
               </div>
             </div>
-            <nav
-              class="faq-content w-dropdown-list"
-              id="w-dropdown-list-0"
-              aria-labelledby="w-dropdown-toggle-0"
-            >
+            <nav class="faq-content w-dropdown-list" id="w-dropdown-list-0">
               <p class="text-size-medium">
                 Long story short, a couple of friends bought mass-market hard
                 seltzer. After a day of partying on the beach, we all got
@@ -1947,7 +1630,7 @@
         </div>
       </section>
       <section class="section-images">
-        <div class="grid-image-carousell">
+        <div class="grid-image-carousell1">
           <div class="w-layout-grid image-grid _1">
             <div
               id="w-node-_23f14f5c-c186-3e7d-79ed-6f163748ecef-6f2c62d2"
@@ -2073,7 +1756,7 @@
         </div>
       </section>
       <section class="section-images-mobile">
-        <div class="grid-image-carousell">
+        <div class="grid-image-carousell2">
           <div class="mobileImagesCarousel">
             <div class="square-image is-mobile">
               <img
@@ -2170,6 +1853,180 @@
                 alt="Crowd of people dancing"
                 class="image"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="find" class="section-storerocket">
+        <div id="Find-the-good-stuff" class="header-store-rocket_wrapper">
+          <h1 class="map_header">Find the good stuff</h1>
+          <div class="storerocket_wrapper">
+            <div id="storerocket-widget">
+              <div id="storerocket-panel">
+                <div id="storerocket-search">
+                  <div class="storerocket-search-form">
+                    <div class="storerocket-query">
+                      <div class="storerocket-search-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                          style="width: 16px; height: 16px"
+                        >
+                          <path
+                            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        type="text"
+                        class="storerocket-search-field"
+                        data-text-id="storerocket-search-placeholder"
+                        autocomplete="off"
+                        placeholder="Enter address or zipcode.."
+                      />
+                      <div class="storerocket-search-spinner"></div>
+                      <div id="storerocket-autocomplete"></div>
+                      <div
+                        class="storerocket-clear-search"
+                        style="display: none"
+                      >
+                        ✕
+                      </div>
+                    </div>
+                    <div id="storerocket-geolocate-button">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 640"
+                        enable-background="new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g>
+                            <path
+                              d="M256,422c-91.533,0-166-74.467-166-166S164.467,90,256,90s166,74.467,166,166S347.533,422,256,422z M256,102    c-84.916,0-154,69.084-154,154s69.084,154,154,154s154-69.084,154-154S340.916,102,256,102z"
+                            ></path>
+                          </g>
+                          <g>
+                            <rect x="250" y="64" width="12" height="96"></rect>
+                          </g>
+                          <g>
+                            <rect x="352" y="250" width="96" height="12"></rect>
+                          </g>
+                          <g>
+                            <rect x="250" y="352" width="12" height="96"></rect>
+                          </g>
+                          <g>
+                            <rect x="64" y="250" width="96" height="12"></rect>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="storerocket-panel-options">
+                  <a href="#" class="storerocket-filter-button">
+                    <span
+                      class="storerocket-filter-button-label"
+                      data-text-id="storerocket-show-filters"
+                      >Filters</span
+                    >
+
+                    <span class="storerocket-icon storerocket-icon-plus">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="transform transition-transform duration-500 ease-in-out"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+
+                    <span class="storerocket-icon storerocket-icon-check">
+                      <svg
+                        idth="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+
+                  <a href="#" class="storerocket-radius-button">
+                    <div>
+                      <span class="storerocket-radius-button-value">20</span>
+                      <span
+                        class="storerocket-radius-button-unit"
+                        data-text-id="storerocket-units-abbreviated"
+                        >mi</span
+                      >
+                    </div>
+
+                    <span class="storerocket-icon storerocket-icon-plus">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="transform transition-transform duration-500 ease-in-out"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="storerocket-no-results is-visible"
+                  style="height: 393px"
+                >
+                  <div class="storerocket-no-results-content">
+                    <div class="storerocket-message">
+                      <span
+                        class="storerocket-message-text"
+                        data-text-id="storerocket-no-locations-message"
+                        >No results found.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="storerocket-map-container">
+                <div id="storerocket-map" class="mapboxgl-map">
+                  <div
+                    class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"
+                  >
+                    <canvas
+                      class="mapboxgl-canvas"
+                      tabindex="0"
+                      aria-label="Map"
+                      role="region"
+                      width="764"
+                      height="996"
+                      style="width: 382px; height: 498px"
+                    ></canvas>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -2304,38 +2161,65 @@
           cssEase: "linear",
           slidesToShow: 3,
           slidesToScroll: 1,
-          variableWidth: true,
+
           dots: false,
           loop: true,
           arrows: false,
           infinite: true,
+        });
+        //For Synchronizing the Two Vibrant Carousels
+
+        $(".vibrant-img-carousel").slick({
+          speed: 800,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplaySpeed: 200,
+          dots: false,
+          arrows: false,
+          loop: true,
+          // fade: true,
+          cssEase: "ease-in-out",
+          infinite: true,
+          vertical: true,
+          asNavFor: ".vibrant-text-carousel",
+        });
+        $(".vibrant-text-carousel").slick({
+          speed: 800,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplaySpeed: 200,
+          dots: false,
+          infinite: true,
+          loop: true,
+          arrows: false,
+          cssEase: "ease-in-out",
+          vertical: true,
+          asNavFor: ".vibrant-img-carousel",
         });
         $(".aboutCarousel").slick({
           speed: 1000,
           autoplay: false,
           slidesToShow: 1,
           slidesToScroll: 1,
-
           dots: true,
           loop: true,
           arrows: false,
           infinite: true,
         });
+        $(".mobileImagesCarousel").slick({
+          speed: 5000,
+          autoplay: true,
+          autoplaySpeed: 50,
+          cssEase: "linear",
+          slidesToShow: 3,
+          slidesToScroll: 1,
 
-        if (document.innerWidth < 992) {
-          $(".mobileImagesCarousel").slick({
-            speed: 5000,
-            autoplay: true,
-            autoplaySpeed: 50,
-            cssEase: "linear",
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            variableWidth: true,
-            dots: false,
-            arrows: false,
-            infinite: true,
-          });
-        }
+          dots: false,
+          arrows: false,
+          // infinite: true,
+        });
       });
     </script>
     <script src="script.js"></script>
