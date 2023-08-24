@@ -122,12 +122,20 @@ summary {
 }
 /* Header Styling Starts */
 
+.top-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
 /* For Desktop */
 .navbar {
   border-bottom: 1px solid #fff;
   transition: transform 0.3s ease-in-out;
   transform: translateY(0); /* Initialize with visible state */
   /* position: sticky; */
+  background-color: #352cf5;
   z-index: 50;
 }
 .navbar.hidden {
@@ -333,7 +341,9 @@ summary {
   text-decoration: underline #352cf5 3px;
 }
 /* Home Styling */
-
+#Home {
+  border-bottom: 1px solid white;
+}
 .Home-page-padding {
   margin-top: 98px;
   padding: 5rem 3.75rem;
@@ -483,7 +493,10 @@ summary {
   transform: rotate(0);
 }
 /* Flavour Section Styling */
-
+/* #flavor {
+  margin-left: 3rem;
+  margin-right: 3rem;
+} */
 .section-flavor {
   border-bottom: 0 solid #fff;
 }
@@ -491,11 +504,11 @@ summary {
   display: none;
 }
 .w-slider {
-  height: 300px;
+  /* height: 300px; */
   text-align: center;
   clear: both;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: #ddd;
+  /* background: #ddd; */
   position: relative;
 }
 .two-column-grid {
@@ -573,19 +586,32 @@ summary {
 .image._2 {
   z-index: 2;
   display: block;
+  transition: transfrom 0.5s ease-in-out;
 }
 .swipe-wrapper.prickly {
   z-index: 7;
 }
+/* .prickly-image-mobile {
+  background-color: transparent;
+} */
 .prickly-images {
   height: 100%;
   background-color: #e492f8;
   display: block;
+  transition: transfrom 0.5s ease-in-out;
+}
+.smallOrange {
+  margin-left: auto;
+  margin-right: auto;
+  top: 15%;
+  height: 75%;
+  width: 75%;
 }
 .swipe-text.top {
-  z-index: 0;
+  z-index: 10;
   top: 10%;
   left: 10%;
+  transition: transfrom 0.5s ease-in-out;
 }
 .swipe-text {
   color: #352cf5;
@@ -601,6 +627,7 @@ summary {
   bottom: 7%;
   left: auto;
   right: 15%;
+  transition: transfrom 0.5s ease-in-out;
 }
 .image.pear {
   z-index: 1;
@@ -619,6 +646,10 @@ summary {
   position: relative;
 }
 .swipe-wrapper._2 {
+  z-index: 5;
+  display: block;
+}
+.swipe-wrapper.llime {
   z-index: 5;
   display: block;
 }
@@ -655,6 +686,37 @@ summary {
   left: 0%;
   right: 0%;
 }
+.lime1 {
+  z-index: 1;
+  width: 70%;
+  height: auto;
+  min-height: 25rem;
+  max-height: 30rem;
+
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.lime-can1 {
+  z-index: 1;
+  width: 100%;
+  min-height: 25rem;
+  max-height: 30rem;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
 .splash-swipe-div {
   justify-content: space-between;
   padding: 1.25rem;
@@ -679,6 +741,56 @@ summary {
   height: 100%;
   object-fit: contain;
 }
+/* First Column Slider/Carousel */
+.w-slider-mark {
+  z-index: 1;
+  height: 100%;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.w-slide {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  white-space: normal;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.mobile-grid {
+  height: auto;
+  display: flex;
+  border: none;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.image-1-1-mobile {
+  position: relative;
+  width: 100%;
+  border: 1px #fff;
+  border-bottom-style: solid;
+  padding-bottom: 100%;
+}
+.flavor-div-mobile {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.875rem 2.8rem 0;
+}
+.flavor-header {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.splashy-flavor {
+  max-width: 2.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(90deg);
+}
 /* second column */
 .flavor-content-div {
   width: 100%;
@@ -689,6 +801,7 @@ summary {
   justify-content: center;
   align-items: center;
   display: flex;
+  border-top: 1px solid white;
 }
 .rollover-item {
   width: auto;
@@ -741,6 +854,7 @@ summary {
   border-right: 0 solid #000;
 }
 .flavor-grid {
+  width: 18rem;
   max-height: 18.125rem;
   max-width: 18.125rem;
   grid-column-gap: 0rem;
@@ -798,12 +912,16 @@ summary {
   left: 0%;
   right: 0%;
 }
-.padding-image:hover .image-hover {
+/* .padding-image:hover .image-hover {
   opacity: 1;
   z-index: 99;
-}
+} */
 
 /* Section Vibrant */
+/* #vibraant {
+  margin-left: 3rem;
+  margin-right: 3rem;
+} */
 .section-vibrant {
   border-bottom: 1px solid #fff;
 }
@@ -874,6 +992,18 @@ summary {
 }
 .pink {
   color: #ff7bb6;
+}
+.bg-greenColor {
+  background-color: #a8e572;
+}
+.bg-purpleColor {
+  background-color: #e492f8;
+}
+.bg-orangeColor {
+  background-color: #ffa852;
+}
+.bg-pinkColor {
+  background-color: #ff7bb6;
 }
 .vibrant-text {
   height: auto;
@@ -1019,6 +1149,10 @@ summary {
 .splash-holder {
   width: auto;
 }
+.leftArrowBtn,
+.rightArrowBtn {
+  cursor: pointer;
+}
 .splashy {
   width: auto;
   height: 100%;
@@ -1054,13 +1188,13 @@ summary {
 
 .aboutCarousel .slick-dots li button {
   font-size: 0; /* Hide numbering */
-  width: 10px; /* Set a width for the dot */
-  height: 10px; /* Set a height for the dot */
+  width: 8px; /* Set a width for the dot */
+  height: 8px; /* Set a height for the dot */
   background-color: transparent; /* Set the background color of the dot */
   border: none; /* Remove any borders */
   border-radius: 100%; /* Make the dot round */
   margin: 0 5px; /* Add some spacing between dots */
-
+  padding: 2.8px;
   border: 1.5px solid white;
 }
 
@@ -1152,7 +1286,7 @@ summary {
   display: block;
   position: static;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
   min-width: 100%;
 }
 .faq-content .text-size-medium {
@@ -1181,6 +1315,7 @@ summary {
   width: 100%;
   padding: 0;
   position: relative;
+  opacity: 0;
 }
 .w-video iframe {
   width: 100%;
@@ -1231,11 +1366,6 @@ summary {
 
 /* Find Section Styling */
 .section-storerocket {
-  /* grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr; */
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
   display: block;
@@ -1261,6 +1391,8 @@ summary {
   margin-right: auto;
 }
 #storerocket-widget {
+  display: grid;
+  grid-template-columns: 60% 40%;
   min-height: 500px;
   height: 100%;
   position: relative;
@@ -1269,8 +1401,7 @@ summary {
   padding: 0;
   text-align: left !important;
   box-sizing: border-box !important;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+
   border: 1px solid #d1d1d1;
   border-radius: 6px;
 }
@@ -1306,9 +1437,7 @@ summary {
   font-size: 12px;
   color: #000;
 }
-svg:not(:root) {
-  overflow: hidden;
-}
+
 .storerocket-search-icon path {
   fill: #ddd;
 }
@@ -1441,7 +1570,7 @@ svg:not(:root) {
   padding: 0 10px 0 20px;
   font-size: 12px;
   font-weight: 500;
-  /* letter-spacing: 1px; */
+
   text-transform: uppercase;
   display: flex !important;
   align-items: center;
@@ -1461,22 +1590,38 @@ svg:not(:root) {
 
 /* Second Container */
 #storerocket-map-container {
-  position: absolute;
-  /*initially  left: 400px; */
-  left: 600px;
-  right: 0;
-  bottom: 0;
-  margin: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
   /* background: #fbfbfb; */
   background-color: #352cf5;
+  background: url("./assets/findBg.png");
   border-radius: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 5;
-  top: 0;
+
   box-shadow: 6px 10px 42px rgba(0, 0, 0, 0.05);
   border-radius: 0 6px 6px 0;
   border-left: 1px solid #d1d1d1;
 }
+.rightMainMaps {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  max-width: 1.5rem;
+}
+
+.rightThree {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.rightSingleImg {
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
 /* Footer Section Styling */
 
 .footer {
@@ -1662,10 +1807,10 @@ svg:not(:root) {
   }
   /* Favor None */
   .two-column-grid {
-    border-left-style: none;
-    border-left-color: #fff;
-    border-right-style: none;
     display: none;
+  }
+  .slider-flavor {
+    display: block;
   }
   /* Vibrant Grid */
   .vibrant-grid {
@@ -1676,7 +1821,27 @@ svg:not(:root) {
     flex-direction: column-reverse;
     display: flex;
   }
-
+  .celebrate-text {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+  }
+  .flavorCLeftArrow {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  .flavorCRightArrow {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
   .section-images-mobile {
     padding: 2rem 0;
     display: block;
@@ -1722,6 +1887,9 @@ svg:not(:root) {
 }
 
 @media screen and (max-width: 479px) {
+  ._21-text {
+    font-size: 1rem;
+  }
   .faq-question-bar {
     width: auto;
     justify-content: space-between;
@@ -1753,5 +1921,18 @@ svg:not(:root) {
     margin-bottom: -0.1rem;
     font-size: 1.25rem;
     line-height: 1.2;
+  }
+  .lime1 {
+    min-height: 15rem;
+    max-height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+  }
+  .lime-can1 {
+    min-height: 15rem;
+    max-height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

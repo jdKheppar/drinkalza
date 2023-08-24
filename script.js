@@ -10,25 +10,14 @@ window.addEventListener(
 
     if (scrollTopPosition > lastScrollTop) {
       $(".navbar").addClass("hidden");
-      //console.log("scrolling down");
     } else if (scrollTopPosition < lastScrollTop) {
       $(".navbar").removeClass("hidden");
-      //console.log("scrolling up");
     }
     lastScrollTop = scrollTopPosition <= 0 ? 0 : scrollTopPosition;
   },
   false
 );
 
-//Hamburger
-// let hamburger = document.getElementById("hamburger-link");
-// let mobileLinkDiv = document.getElementById("mobile-link-div");
-// let xHold = document.getElementById("x-hold");
-// hamburger.addEventListener("click", () => {
-//   mobileLinkDiv.style.transform = "translateX(0)";
-//   $(".hamburger-line").hide();
-//   xHold.style.display = "flex";
-// });
 let hamburger = document.getElementById("hamburger-link");
 let mobileLinkDiv = document.getElementById("mobile-link-div");
 let xHold = document.getElementById("x-hold");
@@ -53,48 +42,102 @@ navLinks.forEach((link) => {
     $(".hamburger-line").css("display", "block");
   });
 });
-xHold.addEventListener("click", function () {
-  console.log("xhold clicked");
-
-  mobileLinkDiv.style.transform = "translateX(100%)";
-  $(".hamburger-line").css("display", "block");
-});
 
 // Section Favor
-// $(".padding-image").click(function () {
-//   $(".image-active").hide().css("opacity", 0);
-//   $(this).find(".image-active").show().css("opacity", 1);
-// });
 
-$(".link").click(function () {
-  const color = $(this).data("color");
-  const text = $(this).data("text");
+$(document).ready(function () {
+  $(".link").click(function (event) {
+    event.preventDefault();
 
-  $(".image-active").hide().css("opacity", 0);
-  $(this).find(".image-active").show().css("opacity", 1);
+    const color = $(this).data("color");
+    const text = $(this).data("text");
+    $(".image-active").hide().css("opacity", 0);
+    $(this).find(".image-active").show().css("opacity", 1);
 
-  $(".heading").text(text).css("color", color);
+    $(".heading").text(text).css("color", color);
+
+    // For changing the images in the corresponding slides
+    const linkClass = $(this).attr("class");
+    let targetClass = "";
+    let flavorSubClass = "";
+
+    if (linkClass.includes("orange")) {
+      targetClass = ".swipe-wrapper.orange";
+      flavorSubClass = ".flavor-sub-wrapper._4";
+    } else if (linkClass.includes("green")) {
+      targetClass = ".swipe-wrapper._2";
+      flavorSubClass = ".flavor-sub-wrapper._2";
+    } else if (linkClass.includes("purple")) {
+      targetClass = ".swipe-wrapper.prickly";
+      flavorSubClass = ".flavor-sub-wrapper._3";
+    } else if (linkClass.includes("pink")) {
+      targetClass = ".swipe-wrapper.berry";
+      flavorSubClass = ".flavor-sub-wrapper._1";
+    }
+
+    $(".swipe-wrapper").css("opacity", 0);
+    $(targetClass).css("opacity", 1);
+
+    $(".flavor-sub-wrapper").css("display", "none");
+    $(flavorSubClass).css("display", "block");
+  });
 });
 
-// const faqQuestionBars = document.querySelectorAll(".faq-question-bar");
+//mousemove
+$(document).ready(function () {
+  const container = $(".two-column-grid");
+  const elementTop = container.find(".swipe-text.top");
+  const elementBottom = container.find(".swipe-text.bottom");
+  const elementBerry = container.find(".image.prickly");
+  const elementImage2 = container.find(".image._2");
 
-// faqQuestionBars.forEach((faqQuestionBar) => {
-//   faqQuestionBar.addEventListener("click", () => {
-//     const plusIcon = faqQuestionBar.querySelector(".plus-icon");
-//     const dropdownList = faqQuestionBar.nextElementSibling;
+  container.mousemove(function (event) {
+    const mouseY = event.clientY;
+    const mouseX = event.clientX;
+    const containerCenterY = container.height() / 2;
+    const containerCenterX = container.width() / 2;
+    const offsetY = mouseY - containerCenterY;
+    const offsetX = mouseX - containerCenterX;
 
-//     // Toggle the rotation of the plus icon
-//     plusIcon.style.transform =
-//       plusIcon.style.transform === "rotate(90deg)"
-//         ? "rotate(0deg)"
-//         : "rotate(90deg)";
+    const maxTranslationY = 5; // Adjust as needed
+    const maxTranslationX = 5; // Adjust as needed
 
-//     // Toggle the height of the dropdown list
-//     dropdownList.style.height =
-//       dropdownList.style.height === "0px" ? "auto" : "0px";
-//   });
-// });
+    const translationValueY = (offsetY / containerCenterY) * maxTranslationY;
+    const translationValueX = (offsetX / containerCenterX) * maxTranslationX;
 
+    elementTop.css("transform", `translateX(${translationValueX}px)`);
+    elementBottom.css("transform", `translateX(${translationValueX}px)`);
+    elementBerry.css("transform", `translateX(${translationValueX}px)`);
+    elementImage2.css("transform", `translateY(${translationValueY}px)`);
+  });
+
+  container.mouseleave(function () {
+    elementTop.css("transform", "translateX(0)");
+    elementBottom.css("transform", "translateX(0)");
+    elementBerry.css("transform", "translateX(0)");
+    elementImage2.css("transform", "translateY(0)");
+  });
+});
+
+$(document).ready(function () {
+  $(".link").hover(
+    function (event) {
+      event.preventDefault();
+
+      const color = $(this).data("color");
+      const text = $(this).data("text");
+      $(this).find(".image-hover").show().css("opacity", 1);
+
+      $(".heading").text(text).css("color", color);
+    },
+    function () {
+      $(this).find(".image-hover").hide().css("opacity", 0);
+    }
+  );
+});
+
+//Section FAQs
+//For Handling the click on the Faq item
 $(document).ready(function () {
   $(".faq-question-bar").click(function () {
     // Toggle the rotation of the plus icon
@@ -102,6 +145,7 @@ $(document).ready(function () {
 
     // Toggle the height of the dropdown content
     $(this).next(".faq-content").toggleClass("expanded");
+    $(this).next(".faq-content").find(".w-video").css("opacity", 1);
   });
 });
 
