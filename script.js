@@ -43,7 +43,7 @@ navLinks.forEach((link) => {
   });
 });
 
-// Section Favor
+// Section Flavor
 
 $(document).ready(function () {
   $(".link").click(function (event) {
@@ -164,3 +164,67 @@ if (window.innerWidth < 992) {
     });
   });
 }
+
+//Section Find
+$(document).ready(function () {
+  $("#filterBtn").click(function () {
+    // Hide elements
+    $(
+      "#storerocket-search, .storerocket-panel-options, .storerocket-no-results"
+    ).css("display", "none");
+
+    // Show and set display to "grid" for #storerocket-filter
+    $("#storerocket-filter").css("display", "flex");
+  });
+  $("#radiusBtn").click(function () {
+    // Hide elements
+    $(
+      "#storerocket-search, .storerocket-panel-options, .storerocket-no-results"
+    ).css("display", "none");
+
+    // Show and set display to "grid" for #storerocket-filter
+    $("#storerocket-radius").css("display", "flex");
+  });
+  $("#filter-close").click(function () {
+    $("#storerocket-search, .storerocket-panel-options").css("display", "flex");
+    // Show elements
+    $(".storerocket-no-results").css("display", "block");
+
+    // Hide #storerocket-filter
+    $("#storerocket-filter").css("display", "none");
+  });
+  $("#filter-apply").click(function () {
+    $("#storerocket-search, .storerocket-panel-options").css("display", "flex");
+    // Show elements
+    $(".storerocket-no-results").css("display", "block");
+
+    // Hide #storerocket-filter
+    $("#storerocket-filter").css("display", "none");
+  });
+  $("#radius-close").click(function () {
+    $("#storerocket-search, .storerocket-panel-options").css("display", "flex");
+    // Show elements
+    $(".storerocket-no-results").css("display", "block");
+
+    // Hide #storerocket-radius
+
+    $("#storerocket-radius").css("display", "none");
+  });
+
+  $(".filter-content").click(function () {
+    $(".storerocket-overlay-filters-apply-button").css("display", "block");
+    $(this).find(".storerocket-icon").toggle();
+  });
+  $(".radius-content").click(function () {
+    $(this).find(".storerocket-icon").toggle();
+
+    $(".radius-content").not(this).find(".storerocket-icon").hide();
+
+    // Show elements
+    $("#storerocket-search, .storerocket-panel-options").css("display", "flex");
+    $(".storerocket-no-results").css("display", "block");
+
+    // Hide #storerocket-radius
+    $("#storerocket-radius").css("display", "none");
+  });
+});
