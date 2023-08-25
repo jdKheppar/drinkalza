@@ -1503,6 +1503,69 @@ summary {
 }
 /* Panel Options CSS */
 
+#storerocket-overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: 40;
+  transition: all 0.2s ease;
+  flex-direction: column;
+}
+.storerocket-overlay-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.storerocket-overlay-close-button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 32px;
+  width: 32px;
+  z-index: 50;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 9999px;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  outline: none !important;
+  border: none !important;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  color: #878787;
+}
+.storerocket-overlay-details-image {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  animation: fade-in-translate-down 0.3s 1;
+}
+.storerocket-overlay-details-content {
+  width: 100%;
+  padding-top: 30px;
+  animation: fade-in 0.2s 1;
+}
+.storerocket-overlay-details-name {
+  color: #4a4a4a;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.storerocket-overlay-details-address {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+}
+/* optioins of overlay */
 .storerocket-panel-options {
   background: transparent;
   color: #1c64f2;
@@ -1517,6 +1580,7 @@ summary {
   border-bottom: 1px solid #ecf0f1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
+
 .storerocket-filter-button,
 .storerocket-radius-button {
   color: #1c64f2;
